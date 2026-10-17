@@ -1,4 +1,6 @@
 rules:
+- DOMAIN-SUFFIX,yhyun.asia,DIRECT
+- DOMAIN-SUFFIX,chat.z.ai,国外
 - DOMAIN-SUFFIX,workbuddy.ai,国外
 - DOMAIN-SUFFIX,corleom.com,DIRECT
 - DOMAIN-SUFFIX,monkeycode-ai.com,DIRECT

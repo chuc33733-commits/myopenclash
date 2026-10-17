@@ -80,16 +80,6 @@ proxy-providers:
     proxy: 直连
 
 
-  cfnext-3:
-    url: "<REDACTED_SUBSCRIBE_URL>"  
-    type: http
-    interval: 10020
-    health-check:
-      enable: true
-      url: https://cp.cloudflare.com/generate_204
-      interval: 300
-    proxy: 直连
-
   cfnext-4:
     url: "<REDACTED_SUBSCRIBE_URL>"  
     type: http
@@ -131,6 +121,17 @@ proxy-providers:
       url: https://cp.cloudflare.com/generate_204
       interval: 300
     proxy: 直连
+
+  宝可梦:
+    url: "<REDACTED_SUBSCRIBE_URL>"  
+    type: http
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://cp.cloudflare.com/generate_204
+      interval: 300
+    proxy: 直连
+
 
 proxies:
   - {name: 直连, type: direct}
