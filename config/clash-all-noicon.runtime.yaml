@@ -40,7 +40,7 @@ proxy-providers:
       interval: 300
     proxy: 直连
     path: "./proxy_provider/ikuu"
-  旺仔:
+  godvpn:
     url: <REDACTED_SUBSCRIBE_URL>
     type: http
     interval: 86400
@@ -49,7 +49,7 @@ proxy-providers:
       url: https://cp.cloudflare.com/generate_204
       interval: 300
     proxy: 直连
-    path: "./proxy_provider/旺仔"
+    path: "./proxy_provider/godvpn"
   cfnext-1:
     url: <REDACTED_SUBSCRIBE_URL>
     type: http
@@ -153,6 +153,9 @@ dns:
     - gfw
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
+  - "+.services.googleapis.cn"
+  - "+.googleapis.cn"
+  - "+.xn--ngstr-lra8j.com"
   - "*.lan"
   - "*.localdomain"
   - "*.example"
@@ -328,16 +331,17 @@ dns:
   - rule-set:oc-cn-domain
   fake-ip-range6: 2001:2::1/64
   respect-rules: false
+  default-nameserver:
+  - 223.5.5.5
   nameserver-policy:
     geosite:cn:
     - 119.6.6.6
     - 114.114.114.114
-  default-nameserver:
-  - 223.5.5.5
+  use-hosts: true
 ipv6: true
 sniffer:
   enable: true
-  override-destination: true
+  override-destination: false
   sniff:
     QUIC:
       ports:
@@ -350,7 +354,7 @@ sniffer:
       ports:
       - 80
       - 8080-8880
-      override-destination: true
+      override-destination: false
   force-domain:
   - "+.netflix.com"
   - "+.nflxvideo.net"
@@ -375,6 +379,7 @@ tun:
   auto-redirect: false
   strict-route: false
   disable-icmp-forwarding: false
+  gso: true
 profile:
   store-selected: true
   store-fake-ip: true
@@ -666,6 +671,7 @@ proxy-groups:
     Wan|\U0001F1F9\U0001F1FC|\U0001F1E8\U0001F1F3|TaiWan|Taiwan|小日本儿|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|\U0001F1EF\U0001F1F5|Japan|印加坡县|广新|新加坡|SG|坡|狮城|\U0001F1F8\U0001F1EC|Singapore|泡菜欧巴|广韩|韩国|韓國|KR|首尔|春川|\U0001F1F0\U0001F1F7|Korea|战争贩子|广美|US|美国|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|洛杉|圣何塞|圣克拉|西雅|xicag|\U0001F1FA\U0001F1F8|United
     States|英国|伦敦|UK|United Kingdom|\U0001F1EC\U0001F1E7|London)).)*$"
 rules:
+- DOMAIN-SUFFIX,workbuddy.ai,国外
 - DOMAIN-SUFFIX,corleom.com,DIRECT
 - DOMAIN-SUFFIX,monkeycode-ai.com,DIRECT
 - DOMAIN-SUFFIX,xn--49sq15btnijvp.xn--fiqs8s,DIRECT
@@ -779,7 +785,7 @@ rule-providers:
     interval: 86400
     behavior: classical
     format: text
-    url: https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/Check.list
+    url: https://ghfast.top/https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/Check.list
     path: "./rule_provider/TEST / Domain"
   ChatGPT / Domain:
     type: http
@@ -800,7 +806,7 @@ rule-providers:
     interval: 86400
     behavior: classical
     format: text
-    url: https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/MetaAi.list
+    url: https://ghfast.top/https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/MetaAi.list
     path: "./rule_provider/Meta AI / Domain"
   Perplexity / Domain:
     type: http
@@ -814,14 +820,14 @@ rule-providers:
     interval: 86400
     behavior: classical
     format: text
-    url: https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/Copilot.list
+    url: https://ghfast.top/https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/Copilot.list
     path: "./rule_provider/Copilot / Domain"
   Gemini / Domain:
     type: http
     interval: 86400
     behavior: classical
     format: text
-    url: https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/Gemini.list
+    url: https://ghfast.top/https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/Gemini.list
     path: "./rule_provider/Gemini / Domain"
   GitHub / Domain:
     type: http
@@ -1010,7 +1016,7 @@ rule-providers:
     interval: 86400
     behavior: classical
     format: text
-    url: https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/Proxy.list
+    url: https://ghfast.top/https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/Proxy.list
     path: "./rule_provider/Proxy / Domain"
   Globe / Domain:
     type: http
@@ -1024,7 +1030,7 @@ rule-providers:
     interval: 86400
     behavior: classical
     format: text
-    url: https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/Direct.list
+    url: https://ghfast.top/https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/Direct.list
     path: "./rule_provider/Direct / Domain"
   China / Domain:
     type: http
@@ -1052,7 +1058,7 @@ rule-providers:
     interval: 86400
     behavior: classical
     format: text
-    url: https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/Block.list
+    url: https://ghfast.top/https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/Block.list
     path: "./rule_provider/Block / Domain"
   Nvidia / Domain:
     type: http
@@ -1094,7 +1100,7 @@ rule-providers:
     interval: 43200
     behavior: domain
     format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs
+    url: https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs
     path: "./rule_provider/oc-cn-domain.mrs"
 ntp:
   enable: true
@@ -1114,3 +1120,9 @@ geox-url:
   geoip: https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
   geosite: https://fastly.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat
   asn: https://fastly.jsdelivr.net/gh/xishang0128/geoip@release/GeoLite2-ASN.mmdb
+hosts:
+  openwrt.lan: lan
+  immortalwrt.lan: lan
+  lede.lan: lan
+  router.lan: lan
+  Kwrt.lan: lan

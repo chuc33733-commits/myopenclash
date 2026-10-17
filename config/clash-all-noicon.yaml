@@ -49,7 +49,7 @@ proxy-providers:
     proxy: 直连
 
 
-  旺仔:
+  godvpn:
     url: "<REDACTED_SUBSCRIBE_URL>"  
     type: http
     interval: 86400
