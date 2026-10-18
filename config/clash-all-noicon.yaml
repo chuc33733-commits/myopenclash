@@ -679,4 +679,3 @@ ntp:
   port: 123
   interval: 30
 
-# sync-verify 20261018
