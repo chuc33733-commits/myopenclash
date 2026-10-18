@@ -678,3 +678,5 @@ ntp:
   server: time.apple.com
   port: 123
   interval: 30
+
+# sync-verify 20261018
