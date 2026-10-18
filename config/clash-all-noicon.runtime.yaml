@@ -691,6 +691,7 @@ rules:
 - DOMAIN-SUFFIX,alipan.com,DIRECT
 - DOMAIN-SUFFIX,ingest.sentry.io,DIRECT
 - DOMAIN-SUFFIX,speed.do,DIRECT
+- DOMAIN-SUFFIX,opencode.ai,DIRECT
 - GEOSITE,category-public-tracker,DIRECT
 - RULE-SET,TEST / Domain,Test
 - RULE-SET,ChatGPT / Domain,ChatGPT

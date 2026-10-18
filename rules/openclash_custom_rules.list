@@ -19,6 +19,7 @@ rules:
 - DOMAIN-SUFFIX,alipan.com,DIRECT
 - DOMAIN-SUFFIX,ingest.sentry.io,DIRECT
 - DOMAIN-SUFFIX,speed.do,DIRECT
+- DOMAIN-SUFFIX,opencode.ai,DIRECT
   # 其他规则...
 ##- PROCESS-NAME,curl,DIRECT #匹配路由自身进程(curl直连)
 ##- DOMAIN-SUFFIX,google.com,Proxy #匹配域名后缀(交由Proxy代理服务器组)
