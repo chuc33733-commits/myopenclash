@@ -70,7 +70,7 @@ myopenclash/
 
 ```sh
 # 1. 克隆仓库到路由器
-git clone https://github.com/wuchen-beifeng/myopenclash /root/myopenclash
+git clone https://github.com/chuc33733-commits/myopenclash /root/myopenclash
 
 # 2. 覆盖配置
 cp /root/myopenclash/config/clash-all-noicon.yaml /etc/openclash/config/
@@ -95,7 +95,7 @@ chmod +x scripts/openclash_custom_firewall_rules.sh
 chmod +x scripts/openclash_custom_overwrite.sh
 
 # 2. 在路由器上克隆仓库（若已克隆则改为 cd 并 git pull）
-git clone https://github.com/wuchen-beifeng/myopenclash /root/myopenclash
+git clone https://github.com/chuc33733-commits/myopenclash /root/myopenclash
 cd /root/myopenclash
 
 # 3. 执行前检查
@@ -188,14 +188,14 @@ cd ~/myopenclash-local
 
 # 2. 下载 Zashboard 配置（v3.29 迁移版）
 wget -O dashboard/wuchen-dashboard-settings.json \
-  https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/refs/heads/main/dashboard/wuchen-dashboard-settings.json
+  https://raw.githubusercontent.com/chuc33733-commits/myopenclash/refs/heads/main/dashboard/wuchen-dashboard-settings.json
 
 # 3. 同时下载历史配置备份
 wget -O dashboard/zashboard-20250417.json \
-  https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/refs/heads/main/dashboard/zashboard-20250417.json
+  https://raw.githubusercontent.com/chuc33733-commits/myopenclash/refs/heads/main/dashboard/zashboard-20250417.json
 
 wget -O dashboard/ange-clashboard-settings.json \
-  https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/refs/heads/main/dashboard/ange-clashboard-settings.json
+  https://raw.githubusercontent.com/chuc33733-commits/myopenclash/refs/heads/main/dashboard/ange-clashboard-settings.json
 
 # 4. 校验文件完整性
 ls -lh dashboard/
@@ -203,7 +203,7 @@ sha256sum dashboard/wuchen-dashboard-settings.json
 
 # 5. 本地修改后可推回仓库（仅当你拥有写权限）
 git init
-git remote add origin https://github.com/wuchen-beifeng/myopenclash.git
+git remote add origin https://github.com/chuc33733-commits/myopenclash.git
 git checkout -b local-edit
 git add dashboard/wuchen-dashboard-settings.json
 git commit -m "local: update zashboard settings"
@@ -224,7 +224,7 @@ git push -u origin local-edit
 - https://github.com/liandu2024/clash
 
 原始链接格式：`https://raw.githubusercontent.com/liandu2024/clash/main/list/<name>`
-重定向为：`https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/<name>`
+重定向为：`https://raw.githubusercontent.com/chuc33733-commits/myopenclash/main/sources/clash/list/<name>`
 
 ## 敏感信息处理
 

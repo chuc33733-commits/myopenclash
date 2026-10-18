@@ -787,7 +787,7 @@ rule-providers:
     interval: 86400
     behavior: classical
     format: text
-    url: https://ghfast.top/https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/Check.list
+    url: https://ghfast.top/https://raw.githubusercontent.com/chuc33733-commits/myopenclash/main/sources/clash/list/Check.list
     path: "./rule_provider/TEST / Domain"
   ChatGPT / Domain:
     type: http
@@ -808,7 +808,7 @@ rule-providers:
     interval: 86400
     behavior: classical
     format: text
-    url: https://ghfast.top/https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/MetaAi.list
+    url: https://ghfast.top/https://raw.githubusercontent.com/chuc33733-commits/myopenclash/main/sources/clash/list/MetaAi.list
     path: "./rule_provider/Meta AI / Domain"
   Perplexity / Domain:
     type: http
@@ -822,14 +822,14 @@ rule-providers:
     interval: 86400
     behavior: classical
     format: text
-    url: https://ghfast.top/https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/Copilot.list
+    url: https://ghfast.top/https://raw.githubusercontent.com/chuc33733-commits/myopenclash/main/sources/clash/list/Copilot.list
     path: "./rule_provider/Copilot / Domain"
   Gemini / Domain:
     type: http
     interval: 86400
     behavior: classical
     format: text
-    url: https://ghfast.top/https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/Gemini.list
+    url: https://ghfast.top/https://raw.githubusercontent.com/chuc33733-commits/myopenclash/main/sources/clash/list/Gemini.list
     path: "./rule_provider/Gemini / Domain"
   GitHub / Domain:
     type: http
@@ -1018,7 +1018,7 @@ rule-providers:
     interval: 86400
     behavior: classical
     format: text
-    url: https://ghfast.top/https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/Proxy.list
+    url: https://ghfast.top/https://raw.githubusercontent.com/chuc33733-commits/myopenclash/main/sources/clash/list/Proxy.list
     path: "./rule_provider/Proxy / Domain"
   Globe / Domain:
     type: http
@@ -1032,7 +1032,7 @@ rule-providers:
     interval: 86400
     behavior: classical
     format: text
-    url: https://ghfast.top/https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/Direct.list
+    url: https://ghfast.top/https://raw.githubusercontent.com/chuc33733-commits/myopenclash/main/sources/clash/list/Direct.list
     path: "./rule_provider/Direct / Domain"
   China / Domain:
     type: http
@@ -1060,7 +1060,7 @@ rule-providers:
     interval: 86400
     behavior: classical
     format: text
-    url: https://ghfast.top/https://raw.githubusercontent.com/wuchen-beifeng/myopenclash/main/sources/clash/list/Block.list
+    url: https://ghfast.top/https://raw.githubusercontent.com/chuc33733-commits/myopenclash/main/sources/clash/list/Block.list
     path: "./rule_provider/Block / Domain"
   Nvidia / Domain:
     type: http
