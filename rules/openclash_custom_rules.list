@@ -1,4 +1,5 @@
 rules:
+- DOMAIN-SUFFIX,opencode.ai,DIRECT
 - DOMAIN-SUFFIX,yhyun.asia,DIRECT
 - DOMAIN-SUFFIX,chat.z.ai,国外
 - DOMAIN-SUFFIX,workbuddy.ai,国外
