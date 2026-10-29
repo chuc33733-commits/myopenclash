@@ -5,18 +5,6 @@
 # 机场节点订阅
 
 proxy-providers:
-
-  forest:
-    url: "<REDACTED_SUBSCRIBE_URL>"  
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://cp.cloudflare.com/generate_204
-      interval: 300
-    proxy: 直连
-
-
   牛逼:
     url: "<REDACTED_SUBSCRIBE_URL>"  
     type: http
@@ -28,15 +16,6 @@ proxy-providers:
     proxy: 直连
 
 
-  haiyu:
-    url: "<REDACTED_SUBSCRIBE_URL>"  
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://cp.cloudflare.com/generate_204
-      interval: 300
-    proxy: 直连
 
   ikuu:
     url: "<REDACTED_SUBSCRIBE_URL>"  

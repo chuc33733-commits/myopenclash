@@ -1,15 +1,5 @@
 ---
 proxy-providers:
-  forest:
-    url: <REDACTED_SUBSCRIBE_URL>
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://cp.cloudflare.com/generate_204
-      interval: 300
-    proxy: 直连
-    path: "./proxy_provider/forest"
   牛逼:
     url: <REDACTED_SUBSCRIBE_URL>
     type: http
@@ -20,16 +10,6 @@ proxy-providers:
       interval: 300
     proxy: 直连
     path: "./proxy_provider/牛逼"
-  haiyu:
-    url: <REDACTED_SUBSCRIBE_URL>
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://cp.cloudflare.com/generate_204
-      interval: 300
-    proxy: 直连
-    path: "./proxy_provider/haiyu"
   ikuu:
     url: <REDACTED_SUBSCRIBE_URL>
     type: http
